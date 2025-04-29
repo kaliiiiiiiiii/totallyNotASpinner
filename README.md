@@ -1,7 +1,16 @@
 # totallyNotASpinner
 
-totally not a spinner
+Totally not a spinner
 
-# Setup
-
-Element can be added to any parent container, as long as the parent container has position set to relative, absolute, fixed & sticky.
+# Minimal setup
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://notaspinner.totallynotsteve.com/spinner.css">
+</head>
+<body>
+  <div class="totally-not-a-spinner"></div>
+</body>
+</html>
+```
