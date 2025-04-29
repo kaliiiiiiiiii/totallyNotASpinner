@@ -38,7 +38,7 @@
   left: 36%;
   width: 27%;
   height: 27%;
-  background: repeating-conic-gradient(#fff 0 15deg, #000000 71deg 30deg);
+  background: repeating-conic-gradient(#000000 0 15deg,#fff  71deg 30deg);
   border-radius: 50%;
   z-index: 10;
   animation: indentedAnimation 2s linear 0s infinite reverse;
