@@ -1,9 +1,38 @@
 .totally-not-a-spinner {
   border: 1px solid black;
-  width: 20px;
-  height: 20px;
+  width: 8%;
+  aspect-ratio: 1 / 1;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* INDENTED */
+
+.indented {
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 0) 25%, black 25%);
+  mask-position: 4vw;
+  width: 10%;
+  animation: indentedAnimation 2s linear 0s infinite;
+}
+
+.indented::after {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  top: 10%;
+  left: 10%;
+  border-radius: 50%;
+  background-color: #adf;
+}
+
+@keyframes indentedAnimation {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
