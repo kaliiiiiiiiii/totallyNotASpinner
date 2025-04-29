@@ -1,20 +1,17 @@
 .totally-not-a-spinner {
-  border: 1px solid black;
-  width: 8%;
+  /* border: 1px solid black; */
   aspect-ratio: 1 / 1;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 /* INDENTED */
 
 .indented {
-  mask-image: radial-gradient(circle, rgba(0, 0, 0, 0) 25%, black 25%);
-  mask-position: 4vw;
   width: 10%;
-  animation: indentedAnimation 2s linear 0s infinite;
+  animation: indentedAnimation 1s linear 0s infinite;
+  z-index: 0;
 }
 
 .indented::after {
@@ -26,6 +23,30 @@
   left: 10%;
   border-radius: 50%;
   background-color: #adf;
+
+  mask-image: radial-gradient(circle at center 100%,  rgba(0, 0, 0, 0) 22%, black 22%);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+
+.indented::before {
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: 36%;
+  width: 25%;
+  height: 25%;
+  background: conic-gradient(
+    red,
+    green,
+    blue,
+    red
+  );
+  border-radius: 50%;
+  z-index: 10;
+  animation: indentedAnimation 0.5s linear 0s infinite reverse;
 }
 
 @keyframes indentedAnimation {
