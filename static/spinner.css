@@ -10,7 +10,7 @@
 
 .indented {
   width: 10%;
-  animation: indentedAnimation 1s linear 0s infinite;
+  animation: indentedAnimation 3s linear 0s infinite;
   z-index: 0;
 }
 
@@ -22,9 +22,11 @@
   top: 10%;
   left: 10%;
   border-radius: 50%;
-  background-color: #adf;
+  background: repeating-conic-gradient(#fff 0 20deg, #2e09b1 120deg 50deg);
 
-  mask-image: radial-gradient(circle at center 100%,  rgba(0, 0, 0, 0) 22%, black 22%);
+  mask-image: 
+    radial-gradient(circle at center 100%, rgba(0, 0, 0, 0) 22%, black 23%), 
+    linear-gradient(0deg, #fff, black,  10%);
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
@@ -36,17 +38,12 @@
   position: absolute;
   top: 80%;
   left: 36%;
-  width: 25%;
-  height: 25%;
-  background: conic-gradient(
-    red,
-    green,
-    blue,
-    red
-  );
+  width: 27%;
+  height: 27%;
+  background: repeating-conic-gradient(#fff 0 15deg, #000000 71deg 30deg);
   border-radius: 50%;
   z-index: 10;
-  animation: indentedAnimation 0.5s linear 0s infinite reverse;
+  animation: indentedAnimation 2s linear 0s infinite reverse;
 }
 
 @keyframes indentedAnimation {
