@@ -24,9 +24,7 @@
   border-radius: 50%;
   background: repeating-conic-gradient(#fff 0 20deg, #2e09b1 120deg 50deg);
 
-  mask-image: 
-    radial-gradient(circle at center 100%, rgba(0, 0, 0, 0) 22%, black 23%), 
-    linear-gradient(0deg, #fff, black,  10%);
+  mask-image: radial-gradient(circle at center 100%, rgba(0, 0, 0, 0) 22%, black 23%);
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
