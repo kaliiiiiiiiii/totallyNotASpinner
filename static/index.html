@@ -5,11 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>totally-not-a-spinner</title>
     <link rel="stylesheet" href="spinner.css" />
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        height: 30vh;
+        width: 30vh;
+        align-content: center;
+      }
+      [theme="dark"] {
+        background-color: black;
+        color: white;
+      }
+    </style>
   </head>
   <body>
-    <div class="totally-not-a-spinner indented"></div>
-    <div style="position: relative; height: 50vh; width: 50vw">
-      <div class="totally-not-a-spinner indented"></div>
-    </div>
+    <table>
+      <tr>
+        <th>totally-not-a-spinner</th>
+        <th>Version_2</th>
+        <th>Version_3</th>
+      </tr>
+      <tr>
+        <th>Bright</th>
+        <td>
+          <div class="totally-not-a-spinner"></div>
+        </td>
+        <td>Todo</td>
+      </tr>
+      <tr>
+        <th>Dark</th>
+        <td theme="dark"> 
+          <div class="totally-not-a-spinner"></div>
+        </td theme="dark">
+        <td theme="dark">Todo</td>
+      </tr>
+    </table>
   </body>
 </html>

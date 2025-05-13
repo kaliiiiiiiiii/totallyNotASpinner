@@ -1,20 +1,17 @@
 .totally-not-a-spinner {
   /* border: 1px solid black; */
   aspect-ratio: 1 / 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-}
-
-/* INDENTED */
-
-.indented {
-  width: 10%;
+  position: relative;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 80%;
   animation: indentedAnimation 3s linear 0s infinite;
   z-index: 0;
 }
 
-.indented::after {
+.totally-not-a-spinner::after {
   content: "";
   position: absolute;
   height: 80%;
@@ -31,7 +28,7 @@
 }
 
 
-.indented::before {
+.totally-not-a-spinner::before {
   content: "";
   position: absolute;
   top: 80%;
